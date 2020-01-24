@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    line-height: 1.4;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    height: 110vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-size: 500px;
+}
+
+.container .navbar ul li a {
+    font-size: 50px;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section#home {
+    background: url('https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+}
+
+section#home p {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+
+section#about {
+    background: url('https://images.pexels.com/photos/1943232/pexels-photo-1943232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+    text-transform: uppercase;
+}
+
+section#projects {
+    background: url('https://images.pexels.com/photos/249203/pexels-photo-249203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+}
+
+section#projects p{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+section#contact {
+    background: url('https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+    color: black;
+    text-transform: uppercase;
+}
+
+section h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+.container .navbar ul li a {
+    font-size: 21px;
+}
+
+section#about p a {
+    color: white;
+}
+
+section#about p a:hover {
+    color: rgb(95, 86, 87);
+    text-decoration: none;
+}
+
+.form-control {
+    width: 600px;
+    height: 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.form-group {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 20px;
+}
+
+section#contact label {
+    font-weight: bold;
+}
+
+section#contact textarea {
+    height: 100px;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    -webkit-box-shadow: 0 0 15px grey;
+            box-shadow: 0 0 15px grey;
+    resize: none;
+}
+
+section#contact input {
+    outline: none;
+    font-size: 25px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 15px grey;
+            box-shadow: 0 0 15px grey;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    -webkit-box-shadow: 0 0 10px grey;
+            box-shadow: 0 0 10px grey;
+    color: blanchedalmond;
+    background-color: rgb(251, 53, 54);
+    outline: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.btn:hover {
+    color: rgb(251, 53, 54);
+    background-color: blanchedalmond;  
+    cursor: pointer;
+}
+
+.alert-danger {
+    color: rgb(251, 53, 54);
+    font-size: 21px;
+}
+
+.alert-success {
+    color: rgb(82, 136, 82);
+    font-size: 21px;
+}
+
+footer {
+    text-align: right !important;
+}
+
+footer label a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+section#projects img {
+    width: 500px;
+    height: 250px;
+    margin: 25px 25px 0;
+}
+
+section#projects div p a {
+    color: white;
+}
+
+section#projects div p a:hover {
+    color: rgb(95, 86, 87);
+    text-decoration: none;  
+}
+
+section#projects div p {
+    margin-top: 25px;
+    display: block;
+}
+
+@media only screen and (max-height: 645px){
+     #home {
+        height: 100%;
+    }
+
+    #about {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    #projects {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    #contact {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .lead {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .proj{
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    section#projects img {
+        width: 400px;
+        height: 200px;
+        margin: 25px 25px 0;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    section#about {
+        height: 110vh;
+    }
+
+    section#projects {
+        height: 110vh;
+    }
+
+    .lead {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;  
+    }
+}
